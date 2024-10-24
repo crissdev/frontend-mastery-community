@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold mb-6;
+  }
+
+  h2 {
+    @apply text-2xl font-bold mb-5;
+  }
+
+  h3 {
+    @apply text-xl font-bold mb-4;
+  }
+
+  h4 {
+    @apply text-lg font-bold mb-3;
+  }
+
+  h5 {
+    @apply text-sm font-bold mb-2;
+  }
+
+  h6 {
+    @apply text-xs font-bold mb-1;
+  }
+
+  select {
+    @apply rounded-md;
+  }
+
+  select.fm-small {
+    @apply py-2 text-sm;
+  }
+
+  input[type="email"],
+  input[type="text"],
+  input[type="password"],
+  textarea,
+  select {
+    @apply dark:bg-gray-800 rounded-md;
+  }
+
+  input:read-only,
+  textarea:read-only {
+    @apply bg-gray-200 dark:bg-gray-700;
+  }
+
+  input:disabled,
+  textarea:disabled,
+  select:disabled {
+    @apply dark:bg-gray-700;
+  }
+
+  a:not([class*="btn"]):not([role="menuitem"]):hover {
+    @apply underline underline-offset-4;
+  }
+
+  input.invalid,
+  textarea.invalid {
+    @apply border border-red-500 dark:border-red-500 placeholder-red-700;
+  }
+
+  .validation-message {
+    @apply text-red-700 dark:text-red-500 text-sm;
+  }
+
+  .btn {
+    @apply inline-block bg-gray-300 text-gray-600 px-2.5 py-1.5 rounded text-center text-sm hover:bg-gray-200 disabled:hover:bg-gray-300 cursor-pointer disabled:cursor-default;
+  }
+
+  .btn:disabled {
+    background-color: color(display-p3 0.004 0.004 0.204 / 0.059);
+    color: color(display-p3 0.004 0.031 0.176 / 0.275);
+
+    &:hover {
+      background-color: color(display-p3 0.004 0.004 0.204 / 0.059);
+      color: color(display-p3 0.004 0.031 0.176 / 0.275);
+    }
+  }
+
+  .btn-outline {
+    @apply bg-transparent text-gray-600 px-3 py-1.5 rounded cursor-pointer hover:bg-gray-200;
+  }
+
+  .btn-sm {
+    @apply text-xs px-2 py-1;
+  }
+
+  .btn-large {
+    @apply text-lg px-6 py-3 rounded-lg;
+  }
+
+  .btn-accent {
+    @apply bg-pink-700 text-white hover:bg-pink-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-400;
+  }
+
+  .btn-primary {
+    @apply bg-blue-700 text-white hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400;
+  }
+
+  .btn-danger {
+    @apply bg-red-700 hover:bg-red-600 text-white;
+  }
+}
