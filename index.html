@@ -17,6 +17,32 @@
   <!-- End Google Tag Manager -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+  <script>
+    (function(h,o,u,n,d) {
+      h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+      d=o.createElement(u);d.async=1;d.src=n
+      n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+    })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js','DD_RUM')
+    window.DD_RUM.onReady(function() {
+      window.DD_RUM.init({
+        clientToken: 'pube09abfa33268f9c46552ea46b3abe2a1',
+        applicationId: '8af28023-96a1-4f10-90a8-74518e4fbc83',
+        // `site` refers to the Datadog site parameter of your organization
+        // see https://docs.datadoghq.com/getting_started/site/
+        site: 'datadoghq.com',
+        service: 'frontend-mastery-landing-page',
+        env: 'prod',
+        // Specify a version number to identify the deployed version of your application in Datadog
+        // version: '1.0.0',
+        sessionSampleRate: 100,
+        sessionReplaySampleRate: 40,
+        trackUserInteractions: true,
+        trackResources: true,
+        trackLongTasks: true,
+        defaultPrivacyLevel: 'mask-user-input',
+      });
+    })
+  </script>
 </head>
 <body class="bg-white text-gray-800">
 <!-- Google Tag Manager (noscript) -->
