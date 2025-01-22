@@ -1,479 +1,523 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <base href="/">
-  <link rel="stylesheet" href="app.generated.css?v=0.0.0.0" />
-  <link rel="icon" type="image/png" href="favicon.ico">
-  <link rel="stylesheet" href="https://use.typekit.net/wxk4mhh.css">
-  <title>Frontend Mastery</title>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WNMXKPQL');</script>
-  <!-- End Google Tag Manager -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-  <script>
-    (function(h,o,u,n,d) {
-      h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
-      d=o.createElement(u);d.async=1;d.src=n
-      n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
-    })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js','DD_RUM')
-    window.DD_RUM.onReady(function() {
-      window.DD_RUM.init({
-        clientToken: 'pube09abfa33268f9c46552ea46b3abe2a1',
-        applicationId: '8af28023-96a1-4f10-90a8-74518e4fbc83',
-        // `site` refers to the Datadog site parameter of your organization
-        // see https://docs.datadoghq.com/getting_started/site/
-        site: 'datadoghq.com',
-        service: 'frontend-mastery-landing-page',
-        env: 'prod',
-        // Specify a version number to identify the deployed version of your application in Datadog
-        // version: '1.0.0',
-        sessionSampleRate: 100,
-        sessionReplaySampleRate: 40,
-        trackUserInteractions: true,
-        trackResources: true,
-        trackLongTasks: true,
-        defaultPrivacyLevel: 'mask-user-input',
+<!doctype html>
+<html lang="en" style="color-scheme: light dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+    <link rel="stylesheet" href="app.generated.css?v=0.0.0.0" />
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/wxk4mhh.css" />
+    <title>Frontend Mastery</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-WNMXKPQL');
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script>
+      (function (h, o, u, n, d) {
+        h = h[d] = h[d] || {
+          q: [],
+          onReady: function (c) {
+            h.q.push(c);
+          },
+        };
+        d = o.createElement(u);
+        d.async = 1;
+        d.src = n;
+        n = o.getElementsByTagName(u)[0];
+        n.parentNode.insertBefore(d, n);
+      })(window, document, 'script', 'https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js', 'DD_RUM');
+      window.DD_RUM.onReady(function () {
+        window.DD_RUM.init({
+          clientToken: 'pube09abfa33268f9c46552ea46b3abe2a1',
+          applicationId: '8af28023-96a1-4f10-90a8-74518e4fbc83',
+          // `site` refers to the Datadog site parameter of your organization
+          // see https://docs.datadoghq.com/getting_started/site/
+          site: 'datadoghq.com',
+          service: 'frontend-mastery-landing-page',
+          env: 'prod',
+          // Specify a version number to identify the deployed version of your application in Datadog
+          // version: '1.0.0',
+          sessionSampleRate: 100,
+          sessionReplaySampleRate: 40,
+          trackUserInteractions: true,
+          trackResources: true,
+          trackLongTasks: true,
+          defaultPrivacyLevel: 'mask-user-input',
+        });
       });
-    })
-  </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW28Q3JJ6G"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EW28Q3JJ6G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-    gtag('config', 'G-EW28Q3JJ6G');
-  </script>
-</head>
-<body class="bg-white text-gray-800">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNMXKPQL"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+      gtag('config', 'G-EW28Q3JJ6G');
+    </script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNMXKPQL" height="0" width="0" style="display: none; visibility: hidden"></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-<div class="w-full text-gray-300">
-  <div class="w-full bg-[#183B56] flex">
-    <header class="grow mx-auto max-w-screen-xl px-10 pt-5 overflow-hidden">
-      <div class="flex justify-between items-center">
-        <img alt="Frontend Mastery logo" role="presentation" src="/images/logo-full-transparent_68295d1f.png"
-             class="block -ml-1.5" width="200" />
+    <div class="w-full text-gray-300">
+      <div class="w-full bg-[#183B56] flex">
+        <header class="grow mx-auto max-w-screen-xl px-10 pt-5 overflow-hidden">
+          <div class="flex justify-between items-center">
+            <img alt="Frontend Mastery logo" role="presentation" src="/images/logo-full-transparent_68295d1f.png" class="block -ml-1.5" width="200" />
 
-        <div class="flex items-center gap-4">
-          <a href="https://learn.frontend-mastery.community/account/login"
-             class="text-white hover:text-gray-100">Login</a>
-          <a href="https://learn.frontend-mastery.community/account/register" class="btn btn-accent hidden md:block">Create
-            account</a>
-        </div>
-      </div>
-
-      <div class="flex flex-col items-center md:flex-row md:items-start md:justify-between h-full">
-        <!-- @* Left *@ -->
-        <div class="flex flex-col items-center md:items-start pb-24 text-center md:text-start">
-          <span class="md:self-start bg-[#FAAD13] text-[#FAAD13] bg-opacity-10 px-2 py-1 rounded-lg mt-20 mb-4 text-sm">More than 100+ challenges</span>
-
-          <div class="max-w-[500px] mb-10">
-            <p class="text-4xl mb-3 text-white">Sharpen your frontend <br />development skills</p>
-            <p class="text-balance text-sm">
-              Frontend Mastery is a specialized online learning platform dedicated to front-end web development. Our
-              mission is to empower aspiring developers with the skills and knowledge needed to master the frontend of
-              web applications.
-            </p>
+            <div class="flex items-center gap-4">
+              <a href="https://learn.frontend-mastery.community/account/login" class="text-white hover:text-gray-100">Login</a>
+              <a href="https://learn.frontend-mastery.community/account/register" class="btn btn-accent hidden md:block">Create account</a>
+            </div>
           </div>
 
-          <a href="https://learn.frontend-mastery.community/account/register"
-             class="md:self-start btn btn-large btn-accent">Create
-            account</a>
-        </div>
+          <div class="flex flex-col items-center md:flex-row md:items-start md:justify-between h-full">
+            <div class="flex flex-col items-center md:items-start pb-24 text-center md:text-start">
+              <span class="md:self-start bg-[#FAAD13] text-[#FAAD13] bg-opacity-10 px-2 py-1 rounded-lg mt-20 mb-4 text-sm">More than 100+ challenges</span>
 
-        <!-- @* Right *@ -->
-        <div class="self-end relative md:-top-12">
-          <img src="/images/image_396ce4fd.svg" alt="" width="380">
-        </div>
-      </div>
-    </header>
-  </div>
+              <div class="max-w-[500px] mb-10">
+                <p class="text-4xl mb-3 text-white">Sharpen your frontend <br />development skills</p>
+                <p class="text-balance text-sm">
+                  Frontend Mastery is a specialized online learning platform dedicated to front-end web development. Our mission is to empower aspiring
+                  developers with the skills and knowledge needed to master the frontend of web applications.
+                </p>
+              </div>
 
-  <div class="w-full bg-[#F1F8FD]">
-    <div class="md:mx-auto max-w-screen-xl h-[480px] md:h-[390px] pt-14 px-10">
-      <div class="flex md:text-start">
-        <div
-          class="text-gray-800 flex flex-col lg:gap-5 lg:flex-row lg:justify-between w-full text-center lg:text-start items-center lg:items-start">
-          <div class="shrink-0 text-4xl font-medium mb-5 text-center md:text-start">
-            Discover<br class="hidden lg:inline" />
-            <span class="text-blue-700">Frontend</span>
-            <span class="text-pink-600">Mastery</span>
+              <a href="https://learn.frontend-mastery.community/account/register" class="md:self-start btn btn-large btn-accent">Create account</a>
+            </div>
+
+            <div class="self-end relative md:-top-12">
+              <img src="/images/image_396ce4fd.svg" alt="" width="380" />
+            </div>
           </div>
-          <p class="text-center w-[80%] mx-auto max-w-[500px] lg:mx-0 lg:w-auto lg:ml-auto lg:text-start">
-            There are <span class="font-bold">over 100+ challenges</span> with Figma design and other resources, waiting
-            for you to work on and share your solutions with fellow developers. With our integrated development
-            environment there's no need to configure anything or worry about deployment.
-          </p>
-        </div>
+        </header>
       </div>
-    </div>
-  </div>
 
-  <div class="w-full -mt-[100px] md:-mt-[160px] mb-20">
-    <div class="md:mx-auto max-w-screen-xl px-10">
-      <div class="flex flex-col lg:flex-row text-gray-800">
-        <!-- @* Carousel *@ -->
-        <div
-          class="lg:mx-0 w-full sm:max-w-[480px] h-[302px] mt-10 flex justify-center self-center lg:self-start lg:items-center shrink-0 rounded-l overflow-hidden">
-
-          <div id="carousel">
-            <div class="w-full h-[302px]">
-              <img class="size-full object-cover" src="/images/slide-dec81b8a.png" alt="">
-            </div>
-            <div class="w-full h-[302px]">
-              <img class="size-full object-cover" src="/images/slide-73a84fdd.png" alt="">
-            </div>
-            <div class="w-full h-[302px]">
-              <img class="size-full object-cover" src="/images/slide-02385268.png" alt="">
+      <div class="w-full bg-[#F1F8FD]">
+        <div class="md:mx-auto max-w-screen-xl h-[480px] md:h-[390px] pt-14 px-10">
+          <div class="flex md:text-start">
+            <div class="text-gray-800 flex flex-col lg:gap-5 lg:flex-row lg:justify-between w-full text-center lg:text-start items-center lg:items-start">
+              <div class="shrink-0 text-4xl font-medium mb-5 text-center md:text-start">
+                Discover<br class="hidden lg:inline" />
+                <span class="text-blue-700">Frontend</span>
+                <span class="text-pink-600">Mastery</span>
+              </div>
+              <p class="text-center w-[80%] mx-auto max-w-[500px] lg:mx-0 lg:w-auto lg:ml-auto lg:text-start">
+                There are <span class="font-bold">over 100+ challenges</span> with Figma design and other resources, waiting for you to work on and share your
+                solutions with fellow developers. With our integrated development environment there's no need to configure anything or worry about deployment.
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <script>
-          tns({
-            container: '#carousel',
-            items: 1,
-            slideBy: 'page',
-            autoplay: true,
-            controls: false,
-            center: true,
-            autoplayButtonOutput: false,
-            nav: false
-          });
-        </script>
+      <div class="w-full -mt-[100px] md:-mt-[160px] mb-20">
+        <div class="md:mx-auto max-w-screen-xl px-10">
+          <div class="flex flex-col lg:flex-row text-gray-800">
+            <div
+              class="lg:mx-0 w-full sm:max-w-[480px] h-[302px] mt-10 flex justify-center self-center lg:self-start lg:items-center shrink-0 rounded-l overflow-hidden"
+            >
+              <div id="carousel">
+                <div class="w-full h-[302px]">
+                  <img class="size-full object-cover" src="/images/slide-dec81b8a.png" alt="" />
+                </div>
+                <div class="w-full h-[302px]">
+                  <img class="size-full object-cover" src="/images/slide-73a84fdd.png" alt="" />
+                </div>
+                <div class="w-full h-[302px]">
+                  <img class="size-full object-cover" src="/images/slide-02385268.png" alt="" />
+                </div>
+              </div>
+            </div>
 
+            <script>
+              tns({
+                container: '#carousel',
+                items: 1,
+                slideBy: 'page',
+                autoplay: true,
+                controls: false,
+                center: true,
+                autoplayButtonOutput: false,
+                nav: false,
+              });
+            </script>
 
-        <!-- @* Get started in 4 easy steps *@ -->
-        <div class="grow bg-white p-10 shadow rounded-r">
-          <h3 class="mb-8">Get started in 4 easy steps</h3>
-          <ol class="space-y-5">
-            <li>
-              <div class="flex items-center gap-5">
-                <div class="font-medium">1</div>
-                <div>
-                  <svg width="48" height="48" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="33.6691" cy="33.3962" r="32.8602" stroke="#ECEEF2" stroke-width="0.581818" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+            <!-- Get started in 4 easy steps -->
+            <div class="grow bg-white p-10 shadow rounded-r">
+              <h3 class="mb-8">Get started in 4 easy steps</h3>
+              <ol class="space-y-5">
+                <li>
+                  <div class="flex items-center gap-5">
+                    <div class="font-medium">1</div>
+                    <div>
+                      <svg width="48" height="48" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="33.6691" cy="33.3962" r="32.8602" stroke="#ECEEF2" stroke-width="0.581818" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
                           d="M27.6379 44.3901C28.197 43.7876 28.4615 43.2172 28.4615 42.6742C28.4615 42.078 28.143 41.4355 27.4685 40.7435C27.1112 40.3769 27.3709 39.761 27.8829 39.761H41.1915V22.6594L37.3741 24.097C37.2434 24.1462 37.0993 24.1465 36.9685 24.0978L32.5153 22.4418L28.175 24.1098C28.0436 24.1603 27.8984 24.1612 27.7664 24.1123L23.8324 22.6547V41.4969C23.8324 43.0947 25.1277 44.3901 26.7256 44.3901H27.6379V44.3901ZM42.9273 45.5474H26.7255C24.4885 45.5474 22.675 43.734 22.675 41.497V21.8233C22.675 21.4203 23.0768 21.1407 23.4547 21.2807L27.9636 22.9513L32.3043 21.2832C32.4359 21.2326 32.5814 21.2318 32.7136 21.281L37.1688 22.9378L41.5661 21.2818C41.9446 21.1393 42.3487 21.419 42.3487 21.8233V39.7611H42.9273C44.5252 39.7611 45.8205 41.0564 45.8205 42.6542C45.8205 44.2521 44.5252 45.5474 42.9273 45.5474ZM29.6188 42.6743C29.6188 43.2595 29.4408 43.8319 29.0943 44.3901H42.9274C43.8862 44.3901 44.6633 43.6129 44.6633 42.6542C44.6633 41.6955 43.8862 40.9183 42.9274 40.9183H29.079C29.4356 41.4952 29.6188 42.0808 29.6188 42.6743Z"
-                          fill="#1565D8" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          fill="#1565D8"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
                           d="M33.0903 29.9243C33.0903 29.6048 32.8313 29.3457 32.5117 29.3457H27.8826C27.563 29.3457 27.304 29.6048 27.304 29.9243C27.304 30.2439 27.563 30.503 27.8826 30.503H32.5117C32.8313 30.503 33.0903 30.2439 33.0903 29.9243ZM37.7195 34.5537C37.7195 34.2342 37.4604 33.9751 37.1408 33.9751H27.8827C27.5631 33.9751 27.304 34.2342 27.304 34.5537C27.304 34.8733 27.5631 35.1324 27.8827 35.1324H37.1408C37.4604 35.1324 37.7195 34.8733 37.7195 34.5537Z"
-                          fill="#00B8D9" />
-                  </svg>
-                </div>
-                <div>
-                  <p class="font-medium">Create an account</p>
-                  <p class="text-sm">Your first step towards mastery</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center gap-5">
-                <div class="font-medium">2</div>
-                <div>
-                  <svg width="48" height="48" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="33.6691" cy="33.7761" r="32.8602" stroke="#ECEEF2" stroke-width="0.581818" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          fill="#00B8D9"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="font-medium">Create an account</p>
+                      <p class="text-sm">Your first step towards mastery</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center gap-5">
+                    <div class="font-medium">2</div>
+                    <div>
+                      <svg width="48" height="48" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="33.6691" cy="33.7761" r="32.8602" stroke="#ECEEF2" stroke-width="0.581818" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
                           d="M33.0907 26.0699C29.6526 24.7906 26.1891 24.7912 22.6752 26.0729V43.3698C26.1563 42.2195 29.6343 42.2187 33.0907 43.3678V26.0699V26.0699ZM34.2479 26.0709V43.3675C37.7272 42.2066 41.2053 42.2059 44.6634 43.3657V26.0689C41.2116 24.771 37.7484 24.7713 34.2479 26.0709H34.2479ZM45.458 25.1364C45.6771 25.2246 45.8206 25.437 45.8206 25.6732V44.1896C45.8206 44.5961 45.4124 44.8759 45.0332 44.7293C41.3239 43.2949 37.6146 43.2949 33.8766 44.7298C33.7432 44.781 33.5955 44.781 33.4621 44.7299C29.7542 43.3088 26.0435 43.3088 22.302 44.7305C21.9233 44.8744 21.5178 44.5947 21.5178 44.1896V25.6732C21.5178 25.4347 21.6641 25.2207 21.8863 25.1341C25.8498 23.5889 29.7872 23.561 33.6696 25.052C37.6205 23.5398 41.56 23.5676 45.458 25.1364Z"
-                          fill="#1565D8" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          fill="#1565D8"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
                           d="M24.9895 29.146C24.9895 29.4656 25.2486 29.7247 25.5681 29.7247H30.1972C30.5168 29.7247 30.7759 29.4656 30.7759 29.146C30.7759 28.8264 30.5168 28.5674 30.1972 28.5674H25.5681C25.2486 28.5674 24.9895 28.8264 24.9895 29.146ZM36.5622 29.1462C36.5622 29.4657 36.8213 29.7248 37.1409 29.7248H41.77C42.0896 29.7248 42.3486 29.4657 42.3486 29.1462C42.3486 28.8266 42.0896 28.5675 41.77 28.5675H37.1409C36.8213 28.5675 36.5622 28.8266 36.5622 29.1462ZM36.5622 32.6183C36.5622 32.9379 36.8213 33.1969 37.1409 33.1969H41.77C42.0896 33.1969 42.3486 32.9379 42.3486 32.6183C42.3486 32.2987 42.0896 32.0396 41.77 32.0396H37.1409C36.8213 32.0396 36.5622 32.2987 36.5622 32.6183ZM37.1409 40.1402C36.8213 40.1402 36.5622 39.8811 36.5622 39.5615C36.5622 39.2419 36.8213 38.9829 37.1409 38.9829H41.77C42.0896 38.9829 42.3486 39.2419 42.3486 39.5615C42.3486 39.8811 42.0896 40.1402 41.77 40.1402H37.1409ZM25.5682 33.1969C25.2486 33.1969 24.9895 32.9379 24.9895 32.6183C24.9895 32.2987 25.2486 32.0396 25.5682 32.0396H30.1973C30.5168 32.0396 30.7759 32.2987 30.7759 32.6183C30.7759 32.9379 30.5168 33.1969 30.1973 33.1969H25.5682ZM24.9895 36.0894C24.9895 36.409 25.2486 36.668 25.5682 36.668H30.1973C30.5168 36.668 30.7759 36.409 30.7759 36.0894C30.7759 35.7698 30.5168 35.5108 30.1973 35.5108H25.5682C25.2486 35.5108 24.9895 35.7698 24.9895 36.0894ZM25.5682 40.1402C25.2486 40.1402 24.9895 39.8811 24.9895 39.5615C24.9895 39.2419 25.2486 38.9829 25.5682 38.9829H30.1973C30.5168 38.9829 30.7759 39.2419 30.7759 39.5615C30.7759 39.8811 30.5168 40.1402 30.1973 40.1402H25.5682ZM41.77 36.668H37.1409C36.8213 36.668 36.5622 36.409 36.5622 36.0894C36.5622 35.7698 36.8213 35.5108 37.1409 35.5108H41.77C42.0896 35.5108 42.3486 35.7698 42.3486 36.0894C42.3486 36.409 42.0896 36.668 41.77 36.668Z"
-                          fill="#00B8D9" />
-                  </svg>
-                </div>
-                <div>
-                  <p class="font-medium">Start a challenge</p>
-                  <p class="text-sm">Use our web-based editor to work on challenges</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center gap-5">
-                <div class="font-medium">3</div>
-                <div>
-                  <svg width="48" height="48" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="33.6694" cy="33.1589" r="32.8602" stroke="#ECEEF2" stroke-width="0.581818" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          fill="#00B8D9"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="font-medium">Start a challenge</p>
+                      <p class="text-sm">Use our web-based editor to work on challenges</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center gap-5">
+                    <div class="font-medium">3</div>
+                    <div>
+                      <svg width="48" height="48" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="33.6694" cy="33.1589" r="32.8602" stroke="#ECEEF2" stroke-width="0.581818" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
                           d="M38.8192 23.3224H39.4557C41.6927 23.3224 43.5062 25.1358 43.5062 27.3728V41.2601C43.5062 43.4971 41.6927 45.3106 39.4557 45.3106H27.883C25.646 45.3106 23.8325 43.4971 23.8325 41.2601V27.3728C23.8325 25.1358 25.646 23.3224 27.883 23.3224H28.5195C28.7876 22.0018 29.9551 21.0078 31.3548 21.0078H35.9839C37.3836 21.0078 38.5511 22.0018 38.8192 23.3224ZM28.5196 24.4799H27.8831C26.2852 24.4799 24.9899 25.7753 24.9899 27.3731V41.2604C24.9899 42.8583 26.2852 44.1536 27.8831 44.1536H39.4558C41.0537 44.1536 42.349 42.8583 42.349 41.2604V27.3731C42.349 25.7753 41.0537 24.4799 39.4558 24.4799H38.8193C38.5512 25.8005 37.3837 26.7945 35.984 26.7945H31.3549C29.9552 26.7945 28.7877 25.8005 28.5196 24.4799ZM31.3548 22.1652C30.3961 22.1652 29.6189 22.9424 29.6189 23.9011C29.6189 24.8598 30.3961 25.637 31.3548 25.637H35.9839C36.9426 25.637 37.7198 24.8598 37.7198 23.9011C37.7198 22.9424 36.9426 22.1652 35.9839 22.1652H31.3548Z"
-                          fill="#1565D8" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          fill="#1565D8"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
                           d="M29.0403 36.0523C28.7207 36.0523 28.4617 35.7932 28.4617 35.4737C28.4617 35.1541 28.7207 34.895 29.0403 34.895H38.2985C38.6181 34.895 38.8771 35.1541 38.8771 35.4737C38.8771 35.7932 38.6181 36.0523 38.2985 36.0523H29.0403ZM29.0403 31.4229C28.7208 31.4229 28.4617 31.1638 28.4617 30.8443C28.4617 30.5247 28.7208 30.2656 29.0403 30.2656H38.2985C38.6181 30.2656 38.8772 30.5247 38.8772 30.8443C38.8772 31.1638 38.6181 31.4229 38.2985 31.4229H29.0403ZM29.0403 40.6808C28.7207 40.6808 28.4617 40.4217 28.4617 40.1021C28.4617 39.7826 28.7207 39.5235 29.0403 39.5235H38.2985C38.6181 39.5235 38.8771 39.7826 38.8771 40.1021C38.8771 40.4217 38.6181 40.6808 38.2985 40.6808H29.0403Z"
-                          fill="#00B8D9" />
-                  </svg>
-                </div>
-                <div>
-                  <p class="font-medium">Share your solution</p>
-                  <p class="text-sm">Automated screenshots of your solutions are displayed in your developer profile</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center gap-5">
-                <div class="font-medium">4</div>
-                <div>
-                  <svg width="48" height="48" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="33.6691" cy="33.5388" r="32.8602" stroke="#ECEEF2" stroke-width="0.581818" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          fill="#00B8D9"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="font-medium">Share your solution</p>
+                      <p class="text-sm">Automated screenshots of your solutions are displayed in your developer profile</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center gap-5">
+                    <div class="font-medium">4</div>
+                    <div>
+                      <svg width="48" height="48" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="33.6691" cy="33.5388" r="32.8602" stroke="#ECEEF2" stroke-width="0.581818" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
                           d="M31.9333 32.3804V38.1668C31.9333 38.4863 32.1924 38.7454 32.512 38.7454C32.8316 38.7454 33.0906 38.4863 33.0906 38.1668V32.3804C33.0906 32.0608 32.8316 31.8018 32.512 31.8018C32.1924 31.8018 31.9333 32.0608 31.9333 32.3804Z"
-                          fill="#00B8D9" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          fill="#00B8D9"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
                           d="M34.2478 32.3804V38.1668C34.2478 38.4863 34.5069 38.7454 34.8264 38.7454C35.146 38.7454 35.4051 38.4863 35.4051 38.1668V32.3804C35.4051 32.0608 35.146 31.8018 34.8264 31.8018C34.5069 31.8018 34.2478 32.0608 34.2478 32.3804Z"
-                          fill="#00B8D9" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          fill="#00B8D9"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
                           d="M36.5623 38.7465H30.7759V41.061H36.5623V38.7465ZM36.5624 37.5888V37.3879C36.5624 37.1645 36.6909 36.9611 36.8927 36.8652C39.4967 35.6282 41.1915 33.0006 41.1915 30.0665C41.1915 25.9121 37.8236 22.5443 33.6692 22.5443C29.5147 22.5443 26.1469 25.9121 26.1469 30.0665C26.1469 33.0006 27.8417 35.6282 30.4456 36.8652C30.6474 36.9611 30.776 37.1645 30.776 37.3879V37.5888H36.5624ZM36.5623 42.2176H30.7759V42.7962C30.7759 43.7549 31.5531 44.5321 32.5118 44.5321H34.8263C35.7851 44.5321 36.5623 43.7549 36.5623 42.7962V42.2176ZM24.9895 30.0663C24.9895 25.2727 28.8755 21.3867 33.6691 21.3867C38.4626 21.3867 42.3486 25.2727 42.3486 30.0663C42.3486 33.3255 40.5356 36.2576 37.7195 37.7447V42.7963C37.7195 44.3941 36.4242 45.6895 34.8263 45.6895H32.5118C30.9139 45.6895 29.6186 44.3941 29.6186 42.7963V37.7447C26.8025 36.2576 24.9895 33.3255 24.9895 30.0663Z"
-                          fill="#1565D8" />
-                  </svg>
-                </div>
-                <div>
-                  <p class="font-medium">Build an online portfolio</p>
-                  <p class="text-sm">We create an online portfolio from your solutions</p>
-                </div>
-              </div>
-            </li>
-          </ol>
+                          fill="#1565D8"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="font-medium">Build an online portfolio</p>
+                      <p class="text-sm">We create an online portfolio from your solutions</p>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="w-full bg-white text-gray-800 mb-20">
-    <div class="mx-auto max-w-screen-xl px-10">
-      <p class="text-4xl text-center mb-20 leading-normal">We make online learning <br />easier than before</p>
+      <div class="w-full bg-white text-gray-800 mb-20">
+        <div class="mx-auto max-w-screen-xl px-10">
+          <p class="text-4xl text-center mb-20 leading-normal">We make online learning <br />easier than before</p>
 
-      <div class="flex flex-col lg:flex-row gap-5 md:gap-5 lg:gap-10 xl:gap-20 w-full">
-        <div class="lg:w-1/3 shadow-md px-8 py-14 bg-[#F7F8F9]">
-          <svg class="mt-5 mb-10" width="50" height="50" viewBox="0 0 50 50" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <g>
-              <path fill-rule="evenodd" clip-rule="evenodd"
+          <div class="flex flex-col lg:flex-row gap-5 md:gap-5 lg:gap-10 xl:gap-20 w-full">
+            <div class="lg:w-1/3 shadow-md px-8 py-14 bg-[#F7F8F9]">
+              <svg class="mt-5 mb-10" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
                     d="M25 46C13.402 46 4 36.598 4 25C4 13.402 13.402 4 25 4C36.598 4 46 13.402 46 25C46 36.598 36.598 46 25 46ZM25 44C35.4934 44 44 35.4934 44 25C44 14.5066 35.4934 6 25 6C14.5066 6 6 14.5066 6 25C6 35.4934 14.5066 44 25 44ZM10 25C10 33.2843 16.7157 40 25 40C33.2843 40 40 33.2843 40 25C40 16.7157 33.2843 10 25 10C16.7157 10 10 16.7157 10 25ZM25 38C32.1797 38 38 32.1797 38 25C38 17.8203 32.1797 12 25 12C17.8203 12 12 17.8203 12 25C12 32.1797 17.8203 38 25 38ZM28.9062 18H26V17C26 16.4477 25.5523 16 25 16C24.4477 16 24 16.4477 24 17V18H23.0279C21.371 18 20.0279 19.3431 20.0279 21V22.0015C20.0279 23.6584 21.371 25.0015 23.0279 25.0015H27C27.5523 25.0015 28 25.4492 28 26.0015V27C28 27.5523 27.5523 28 27 28H22.0245C21.9833 27.4997 21.572 27.0993 21.0583 27.0837C20.5063 27.0669 20.0451 27.5008 20.0284 28.0529L20.0005 28.9696C19.9833 29.5335 20.4358 30 21 30H24V30.9825C24 31.5348 24.4477 31.9825 25 31.9825C25.5523 31.9825 26 31.5348 26 30.9825V30H27C28.6569 30 30 28.6569 30 27V26.0015C30 24.3447 28.6569 23.0015 27 23.0015H23.0279C22.4756 23.0015 22.0279 22.5538 22.0279 22.0015V21C22.0279 20.4477 22.4756 20 23.0279 20H27.9359C28.0444 20.4349 28.4377 20.7571 28.9062 20.7571C29.4585 20.7571 29.9062 20.3094 29.9062 19.7571V19C29.9062 18.4477 29.4585 18 28.9062 18Z"
-                    fill="#183B56" />
-            </g>
-          </svg>
+                    fill="#183B56"
+                  />
+                </g>
+              </svg>
 
-          <p class="mb-5 font-medium text-xl">No need to set up anything</p>
-          <p class="text-sm text-gray-500">We have a web-based editor, with intellisense to assist you every step of the
-            way.</p>
-        </div>
-        <div class="lg:w-1/3 shadow-md px-8 py-14 bg-[#F7F8F9]">
-          <svg class="mt-5 mb-10" width="50" height="50" viewBox="0 0 50 50" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <g>
-              <path fill-rule="evenodd" clip-rule="evenodd"
+              <p class="mb-5 font-medium text-xl">No need to set up anything</p>
+              <p class="text-sm text-gray-500">We have a web-based editor, with intellisense to assist you every step of the way.</p>
+            </div>
+            <div class="lg:w-1/3 shadow-md px-8 py-14 bg-[#F7F8F9]">
+              <svg class="mt-5 mb-10" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
                     d="M4 25C4 36.598 13.402 46 25 46C36.598 46 46 36.598 46 25C46 13.402 36.598 4 25 4C13.402 4 4 13.402 4 25ZM44 25C44 35.4934 35.4934 44 25 44C14.5066 44 6 35.4934 6 25C6 14.5066 14.5066 6 25 6C35.4934 6 44 14.5066 44 25ZM20.9776 35.6915C19.7197 36.3814 18.1632 35.8767 17.5131 34.5868C17.2592 34.0831 17.172 33.5086 17.2638 32.9501L18.0414 28.2208L14.7545 24.8787C13.7664 23.874 13.7464 22.2412 14.7089 21.2112C15.0993 20.7934 15.6149 20.5193 16.1756 20.4344L20.6839 19.751L22.7077 15.4734C23.3254 14.1679 24.8679 13.6222 26.1428 14.2785C26.6448 14.537 27.048 14.9576 27.2921 15.4734L29.3159 19.751L33.8242 20.4344C35.2207 20.646 36.1714 21.975 35.9741 23.3913C35.8957 23.9543 35.6405 24.4769 35.2453 24.8787L31.9584 28.2208L32.736 32.9501C32.9678 34.3602 32.0509 35.7127 30.6612 35.9613C30.1003 36.0617 29.5233 35.9663 29.0222 35.6915L24.9999 33.4857L20.9776 35.6915ZM25.4807 31.4683C25.1812 31.3041 24.8186 31.3041 24.5191 31.4683L20.0159 33.9379C19.7604 34.078 19.4448 33.9757 19.2991 33.6867C19.2362 33.5618 19.2141 33.4162 19.2373 33.2746L20.0974 28.044C20.1491 27.729 20.0474 27.4082 19.8236 27.1806L16.1805 23.4763C15.9441 23.236 15.9391 22.824 16.1702 22.5767C16.255 22.4859 16.3622 22.4289 16.4753 22.4118L21.51 21.6486C21.839 21.5988 22.1217 21.3885 22.264 21.0876L24.5156 16.3287C24.6547 16.0347 24.9688 15.9236 25.2273 16.0567C25.3358 16.1126 25.4269 16.2075 25.4842 16.3287L27.7358 21.0876C27.8781 21.3885 28.1608 21.5988 28.4898 21.6486L33.5245 22.4118C33.8201 22.4566 34.0419 22.7665 33.9933 23.1154C33.9738 23.2553 33.9117 23.3824 33.8193 23.4763L30.1762 27.1806C29.9524 27.4082 29.8507 27.729 29.9024 28.044L30.7625 33.2746C30.8197 33.6225 30.6046 33.9397 30.309 33.9926C30.1988 34.0123 30.0854 33.9936 29.9839 33.9379L25.4807 31.4683Z"
-                    fill="#2E2E2E" />
-            </g>
-          </svg>
+                    fill="#2E2E2E"
+                  />
+                </g>
+              </svg>
 
-          <p class="mb-5 font-medium text-xl">Automated online portfolio</p>
-          <p class="text-sm text-gray-500">We create a page with all your solutions for you to share in your job
-            applications.</p>
-        </div>
-        <div class="lg:w-1/3 shadow-md px-8 py-14 bg-[#F7F8F9]">
-          <svg class="mt-5 mb-10" width="48" height="48" viewBox="0 0 48 48" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
-            <g>
-              <path fill-rule="evenodd" clip-rule="evenodd"
+              <p class="mb-5 font-medium text-xl">Automated online portfolio</p>
+              <p class="text-sm text-gray-500">We create a page with all your solutions for you to share in your job applications.</p>
+            </div>
+            <div class="lg:w-1/3 shadow-md px-8 py-14 bg-[#F7F8F9]">
+              <svg class="mt-5 mb-10" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
                     d="M25.5224 9.59984H17.2801V6.71984C17.2801 5.12926 15.9907 3.83984 14.4001 3.83984H6.72009C5.12951 3.83984 3.84009 5.12926 3.84009 6.71984V14.3998C3.84009 15.9904 5.12951 17.2798 6.72009 17.2798H14.4001C15.9907 17.2798 17.2801 15.9904 17.2801 14.3998V11.5198H25.5224L23.3213 13.721C22.9464 14.0959 22.9464 14.7038 23.3213 15.0787C23.6962 15.4536 24.304 15.4536 24.6789 15.0787L28.5189 11.2387C28.8938 10.8638 28.8938 10.2559 28.5189 9.88102L24.6789 6.04102C24.304 5.66612 23.6962 5.66612 23.3213 6.04102C22.9464 6.41592 22.9464 7.02376 23.3213 7.39867L25.5224 9.59984ZM15.3601 6.71984V14.3998C15.3601 14.93 14.9303 15.3598 14.4001 15.3598H6.72009C6.18989 15.3598 5.76009 14.93 5.76009 14.3998V6.71984C5.76009 6.18965 6.18989 5.75984 6.72009 5.75984H14.4001C14.9303 5.75984 15.3601 6.18965 15.3601 6.71984ZM38.4001 17.2798V25.5222L40.6013 23.321C40.9762 22.9461 41.584 22.9461 41.9589 23.321C42.3338 23.6959 42.3338 24.3038 41.9589 24.6787L38.1189 28.5187C37.9315 28.7061 37.6858 28.7998 37.4401 28.7998C37.1944 28.7998 36.9487 28.7061 36.7613 28.5187L32.9213 24.6787C32.5464 24.3038 32.5464 23.6959 32.9213 23.321C33.2962 22.9461 33.904 22.9461 34.2789 23.321L36.4801 25.5222V17.2798H33.6001C32.0095 17.2798 30.7201 15.9904 30.7201 14.3998V6.71984C30.7201 5.12926 32.0095 3.83984 33.6001 3.83984H41.2801C42.8707 3.83984 44.1601 5.12926 44.1601 6.71984V14.3998C44.1601 15.9904 42.8707 17.2798 41.2801 17.2798H38.4001ZM41.2801 15.3598H33.6001C33.0699 15.3598 32.6401 14.93 32.6401 14.3998V6.71984C32.6401 6.18965 33.0699 5.75984 33.6001 5.75984H41.2801C41.8103 5.75984 42.2401 6.18965 42.2401 6.71984V14.3998C42.2401 14.93 41.8103 15.3598 41.2801 15.3598ZM30.7201 38.3998H22.4777L24.6789 40.601C25.0538 40.9759 25.0538 41.5838 24.6789 41.9587C24.304 42.3336 23.6962 42.3336 23.3213 41.9587L19.4813 38.1187C19.1064 37.7438 19.1064 37.1359 19.4813 36.761L23.3213 32.921C23.6962 32.5461 24.304 32.5461 24.6789 32.921C25.0538 33.2959 25.0538 33.9038 24.6789 34.2787L22.4777 36.4798H30.7201V33.5998C30.7201 32.0093 32.0095 30.7198 33.6001 30.7198H41.2801C42.8707 30.7198 44.1601 32.0093 44.1601 33.5998V41.2798C44.1601 42.8704 42.8707 44.1598 41.2801 44.1598H33.6001C32.0095 44.1598 30.7201 42.8704 30.7201 41.2798V38.3998ZM32.6401 41.2798V33.5998C32.6401 33.0696 33.0699 32.6398 33.6001 32.6398H41.2801C41.8103 32.6398 42.2401 33.0696 42.2401 33.5998V41.2798C42.2401 41.81 41.8103 42.2398 41.2801 42.2398H33.6001C33.0699 42.2398 32.6401 41.81 32.6401 41.2798ZM11.5201 30.7198H14.4001C15.9907 30.7198 17.2801 32.0093 17.2801 33.5998V41.2798C17.2801 42.8704 15.9907 44.1598 14.4001 44.1598H6.72009C5.12951 44.1598 3.84009 42.8704 3.84009 41.2798V33.5998C3.84009 32.0093 5.12951 30.7198 6.72009 30.7198H9.60009V22.4775L7.39891 24.6787C7.02401 25.0536 6.41617 25.0536 6.04127 24.6787C5.66636 24.3038 5.66636 23.6959 6.04127 23.321L9.88127 19.481C10.2562 19.1061 10.864 19.1061 11.2389 19.481L15.0789 23.321C15.4538 23.6959 15.4538 24.3038 15.0789 24.6787C14.704 25.0536 14.0962 25.0536 13.7213 24.6787L11.5201 22.4775V30.7198ZM5.76009 33.5998C5.76009 33.0696 6.18989 32.6398 6.72009 32.6398H14.4001C14.9303 32.6398 15.3601 33.0696 15.3601 33.5998V41.2798C15.3601 41.81 14.9303 42.2398 14.4001 42.2398H6.72009C6.18989 42.2398 5.76009 41.81 5.76009 41.2798V33.5998Z"
-                    fill="#2E2E2E" />
-            </g>
-          </svg>
+                    fill="#2E2E2E"
+                  />
+                </g>
+              </svg>
 
-          <p class="mb-5 font-medium text-xl">We take care of deployment</p>
-          <p class="text-sm text-gray-500">Every solution is deployed using our servers so you can focus on development
-            and improving your skills.</p>
+              <p class="mb-5 font-medium text-xl">We take care of deployment</p>
+              <p class="text-sm text-gray-500">Every solution is deployed using our servers so you can focus on development and improving your skills.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
+      <div class="flex justify-center w-full mb-20">
+        <a href="https://learn.frontend-mastery.community/account/register" class="mx-auto btn btn-accent btn-large"> Join Frontend Mastery </a>
+      </div>
 
-  <div class="flex justify-center w-full mb-20">
-    <a href="https://learn.frontend-mastery.community/account/register" class="mx-auto btn btn-accent btn-large">
-      Join Frontend Mastery
-    </a>
-  </div>
+      <div class="w-full text-gray-800 bg-white -mt-32">
+        <div class="mx-auto max-w-screen-xl px-10 py-24">
+          <p class="text-4xl text-center leading-normal mb-16">
+            Challenges designed to develop<br />
+            your frontend skills
+          </p>
 
-  <div class="w-full text-gray-800 bg-white -mt-32">
-    <div class="mx-auto max-w-screen-xl px-10 py-24">
-      <p class="text-4xl text-center leading-normal mb-16">Challenges designed to develop<br /> your frontend skills</p>
-
-      <div class="flex flex-wrap justify-around gap-5 mb-20">
-        <img class="border rounded-md" src="images/design-b7269fa2.png" alt="">
-        <img class="border rounded-md" src="images/design-48e4032c.png" alt="">
-        <img class="border rounded-md" src="images/design-0374e247.png" alt="">
-        <img class="border rounded-md" src="images/design-bbd641cf.png" alt="">
-        <img class="border rounded-md" src="images/design-9778f9c0.png" alt="">
-        <img class="border rounded-md" src="images/design-f1496321.png" alt="">
-        <img class="border rounded-md" src="images/design-3690e53e.png" alt="">
-        <div class="rounded-md w-[242px] h-[152px] bg-[#00B8D9] flex flex-col justify-center items-center">
-          <a href="https://learn.frontend-mastery.community/account/register"
-             class="text-gray-100 flex flex-col justify-center items-center">
-            <svg width="72" height="72" viewBox="0 0 136 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#filter0_d_0_1)">
-                <rect x="32" y="4" width="72" height="72" rx="36" fill="black" fill-opacity="0.01" />
-              </g>
-              <rect x="32" y="4" width="72" height="72" rx="36" fill="white" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
+          <div class="flex flex-wrap justify-around gap-5 mb-20">
+            <img class="border rounded-md" src="images/design-9778f9c0.png" alt="" />
+            <img class="border rounded-md" src="images/design-f1496321.png" alt="" />
+            <img class="border rounded-md" src="images/design-3690e53e.png" alt="" />
+            <img class="border rounded-md hidden xl:block" src="images/design-b7269fa2.png" alt="" />
+            <img class="border rounded-md hidden xl:block" src="images/design-48e4032c.png" alt="" />
+            <img class="border rounded-md hidden lg:block" src="images/design-0374e247.png" alt="" />
+            <img class="border rounded-md hidden lg:block" src="images/design-bbd641cf.png" alt="" />
+            <div class="rounded-md w-[242px] h-[152px] bg-[#00B8D9] flex flex-col justify-center items-center">
+              <a href="https://learn.frontend-mastery.community/account/register" class="text-gray-100 flex flex-col justify-center items-center">
+                <svg width="72" height="72" viewBox="0 0 136 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d_0_1)">
+                    <rect x="32" y="4" width="72" height="72" rx="36" fill="black" fill-opacity="0.01" />
+                  </g>
+                  <rect x="32" y="4" width="72" height="72" rx="36" fill="white" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
                     d="M75.3058 45.7847L74.532 46.5586C74.2777 46.8156 73.8621 46.8156 73.6051 46.5586L70.8789 43.8324C70.7558 43.7093 70.6875 43.5426 70.6875 43.3675V42.9219C69.7223 43.6765 68.5082 44.125 67.1875 44.125C64.0457 44.125 61.5 41.5793 61.5 38.4375C61.5 35.2957 64.0457 32.75 67.1875 32.75C70.3293 32.75 72.875 35.2957 72.875 38.4375C72.875 39.7582 72.4265 40.9723 71.6719 41.9375H72.1175C72.2926 41.9375 72.4593 42.0058 72.5824 42.1289L75.3086 44.8551C75.5629 45.1121 75.5629 45.5277 75.3058 45.7847ZM63.6875 38.4375C63.6875 40.3734 65.2543 41.9375 67.1875 41.9375C69.1234 41.9375 70.6875 40.3707 70.6875 38.4375C70.6875 36.5016 69.1207 34.9375 67.1875 34.9375C65.2516 34.9375 63.6875 36.5043 63.6875 38.4375Z"
-                    fill="#183B56" />
-              <defs>
-                <filter id="filter0_d_0_1" x="0" y="0" width="136" height="136" filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                 result="hardAlpha" />
-                  <feOffset dy="28" />
-                  <feGaussianBlur stdDeviation="16" />
-                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
-                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1" />
-                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape" />
-                </filter>
-              </defs>
-            </svg>
-            <p class="grow-0">
-              Sign up for more...
+                    fill="#183B56"
+                  />
+                  <defs>
+                    <filter id="filter0_d_0_1" x="0" y="0" width="136" height="136" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                      <feOffset dy="28" />
+                      <feGaussianBlur stdDeviation="16" />
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0" />
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape" />
+                    </filter>
+                  </defs>
+                </svg>
+                <p class="grow-0">Sign up for more...</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex justify-center">
+            <a href="https://learn.frontend-mastery.community/account/register" class="mx-auto btn btn-large btn-accent"> Get access now </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full text-gray-800 bg-[#F7F8F9]">
+        <div class="mx-auto max-w-screen-xl px-10 py-24">
+          <div class="flex flex-col lg:flex-row lg:justify-between items-center text-center lg:text-start lg:items-start mb-16 lg:mb-5 gap-10">
+            <p class="text-3xl leading-normal lg:mb-16 grow-0 max-w-[500px]">
+              Join <span>Frontend</span> <span>Mastery</span> and connect with developers from around the world.
             </p>
-          </a>
-        </div>
-
-      </div>
-
-      <div class="flex justify-center">
-        <a href="https://learn.frontend-mastery.community/account/register" class="mx-auto btn btn-large btn-accent">
-          Get access now
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="w-full text-gray-800 bg-[#F7F8F9]">
-    <div class="mx-auto max-w-screen-xl px-10 py-24">
-      <div
-        class="flex flex-col lg:flex-row lg:justify-between items-center text-center lg:text-start lg:items-start mb-16 lg:mb-5 gap-10">
-        <p class="text-3xl leading-normal lg:mb-16 grow-0 max-w-[500px]">
-          Join <span>Frontend</span> <span>Mastery</span> and connect with developers from around the world.
-        </p>
-        <span class="max-w-[500px] grow-0">
-				  Improve your frontend skills with our interactive coding challenges. Connect with a global community of
-          developers, tackle real-world problems, and sharpen your coding expertise. Join us today and push the
-          boundaries of your frontend development skills!
-			</span>
-
-      </div>
-
-      <div class="flex justify-center w-full pb-10">
-        <div class="flex justify-center flex-col items-stretch sm:flex-row gap-4 max-w-4xl">
-          <div
-            class="grow-0 flex flex-col xs:w-full sm:w-1/2 lg:w-1/3 p-6 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-graphite relative">
-            <p class="text-2xl mb-4">Free</p>
-            <div class="mb-4">
-              <a href="https://learn.frontend-mastery.community/account/register" class="w-full btn btn-accent">Create
-                account</a>
-            </div>
-            <p class="mb-4 leading-5 text-sm">For developers looking to try out the
-              platform.</p>
-            <div class="flex gap-1 flex-col text-sm mb-8">
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>Access to free challenges</div>
-              </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>Access to community solutions</div>
-              </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>In browser code editor</div>
-              </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>1 Figma download monthly</div>
-              </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>Automated screenshots for solutions</div>
-              </div>
-            </div>
+            <span class="max-w-[500px] grow-0">
+              Improve your frontend skills with our interactive coding challenges. Connect with a global community of developers, tackle real-world problems,
+              and sharpen your coding expertise. Join us today and push the boundaries of your frontend development skills!
+            </span>
           </div>
-          <div
-            class="grow-0 flex flex-col xs:w-full sm:w-1/2 lg:w-1/3 p-6 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-graphite relative">
-            <p class="text-2xl mb-4">Developer</p>
-            <div class="mb-4">
-              <a href="https://learn.frontend-mastery.community/account/register" class="w-full btn btn-accent">Upgrade after login</a>
-            </div>
-            <p class="mb-4 leading-5 text-sm">For developers looking to advance their knowledge in frontend technologies, and build an online brand..</p>
-            <div class="flex gap-1 flex-col text-sm mb-8">
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>Everything in Free</div>
+
+          <div class="flex justify-center w-full pb-10">
+            <div class="flex justify-center flex-col items-stretch sm:flex-row gap-4 max-w-4xl">
+              <div
+                class="grow-0 flex flex-col xs:w-full sm:w-1/2 lg:w-1/3 p-6 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-graphite relative"
+              >
+                <p class="text-2xl mb-4">Free</p>
+                <div class="mb-4">
+                  <a href="https://learn.frontend-mastery.community/account/register" class="w-full btn btn-accent">Create account</a>
+                </div>
+                <p class="mb-4 leading-5 text-sm">For developers looking to try out the platform.</p>
+                <div class="flex gap-1 flex-col text-sm mb-8">
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>Access to free challenges</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>Access to community solutions</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>In browser code editor</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>1 Figma download monthly</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>Automated screenshots for solutions</div>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>Access to PRO challenges</div>
-              </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>Customizable developer profile</div>
-              </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>Access to new challenges added frequently</div>
-              </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>Access to 10 Figma designs every month</div>
-              </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div>Access to challenge assets (images, videos etc.)</div>
-              </div>
-              <div class="flex items-baseline gap-1">
-                <span>✔️</span>
-                <div class="leading-none">Priority for screenshots</div>
-              </div>
-            </div>
-            <div class="flex gap-1 flex-row items-center mt-auto mb-5">
-              <p class="text-4xl">€9</p>
-              <div class="flex flex-col text-xs text-gray-400">
-                <span class="leading-3">per<br>month</span>
+              <div
+                class="grow-0 flex flex-col xs:w-full sm:w-1/2 lg:w-1/3 p-6 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-graphite relative"
+              >
+                <p class="text-2xl mb-4">Developer</p>
+                <div class="mb-4">
+                  <a href="https://learn.frontend-mastery.community/account/register" class="w-full btn btn-accent">Upgrade after login</a>
+                </div>
+                <p class="mb-4 leading-5 text-sm">For developers looking to advance their knowledge in frontend technologies, and build an online brand..</p>
+                <div class="flex gap-1 flex-col text-sm mb-8">
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>Everything in Free</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>Access to PRO challenges</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>Customizable developer profile</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>Access to new challenges added frequently</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>Access to 10 Figma designs every month</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div>Access to challenge assets (images, videos etc.)</div>
+                  </div>
+                  <div class="flex items-baseline gap-1">
+                    <span>✔️</span>
+                    <div class="leading-none">Priority for screenshots</div>
+                  </div>
+                </div>
+                <div class="flex gap-1 flex-row items-center mt-auto mb-5">
+                  <p class="text-4xl">€9</p>
+                  <div class="flex flex-col text-xs text-gray-400">
+                    <span class="leading-3">per<br />month</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <footer class="bg-gray-200 text-gray-800 h-16 px-5 flex justify-between items-center">
+        <div>
+          <span>Frontend Mastery © <span id="current-year">2025</span></span>
+        </div>
+        <div class="flex items-center gap-3 text-sm">
+          <a href="https://learn.frontend-mastery.community/terms" target="_blank">Terms</a>
+          <a href="mailto:contact@frontend-mastery.community">Contact</a>
+        </div>
+      </footer>
     </div>
 
-  </div>
+    <script>
+      function onDocumentLoaded() {
+        'use strict';
+        document.querySelector('#current-year').textContent = new Date().getFullYear();
 
-  <footer class="bg-gray-200 fixed bottom-0 left-0 right-0 text-gray-800 h-16 px-5 flex justify-between items-center">
-    <div>
-      <span>Frontend Mastery © 2023-<span id="current-year">2024</span></span>
-    </div>
-    <div class="flex items-center gap-3 text-sm">
-      <a href="https://learn.frontend-mastery.community/terms">Terms</a>
-      <a href="mailto:contact@frontend-mastery.community">Contact</a>
-    </div>
-  </footer>
+        let searchParams = new URLSearchParams(window.location.search);
+        let invitationCode = searchParams.get('invitation_code');
+        if (invitationCode) {
+          let links = document.querySelectorAll('a[href*="/register"]');
+          links.forEach((link) => {
+            let url = new URL(link.href);
+            url.searchParams.set('invitation_code', invitationCode);
+            link.href = url.toString();
+          });
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelector('#current-year').textContent = new Date().getFullYear();
-    }, { once: true })
-  </script>
-</div>
-
-</body>
+          links = document.querySelectorAll('a[href*="/login"]');
+          links.forEach((link) => {
+            link.hidden = true;
+          });
+        }
+      }
+      document.addEventListener('DOMContentLoaded', onDocumentLoaded, { once: true });
+    </script>
+  </body>
 </html>
